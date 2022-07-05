@@ -1,0 +1,10 @@
+# Atividade 1 - Caio Nery Matos Santos
+
+## Modo 1 - Visita a Pé: 
+No primeiro modo de visita, optei pelo modo de câmera **PointerLockControls**, pois poderia simular uma vista em primeira pessoa. Adicionei os controles por evento ao acionar teclas, nesse caso WASD ou setas direcionais para movimentar a câmera simulando um visitante a pé. Além disso, a partir das coordenadas máximas da box, defini limites para os quais a câmera pode se locomover, a fim de simular colisão com as paredes visíveis nos quadros lados da parede.
+
+## Modo 2 - Visita com Drone:
+Nesse segundo modo de visita, optei pelo modo de câmera **FlyControls**, pois seria uma maneira verossímil de simular um drone voador. Para a movimentação da câmera ao simular, o uso das teclas WASD fazem o movimento relativo ao corpo, RF fazem o movimento de subida e descida, QE fazem o movimento de rolagem (inclinar) e as setas direcionais fazem o movimento de câmera, além de poder usar o mouse para lomocação. Assim como no modo anterior, limitei, a partir das coordenadas máximas do box, os limites para a câmera, com o adendo de também definir colisão com o chão e com o "teto" um pouco após o telhado da estrutura.
+
+## Modo 3 - Visita Guiada:
+Nesse último modo de visita, optei novamente pelo modo de câmera **PointerLockControls**, para simular novamente uma vista em primeira pessoa. Dessa vez não permiti os movimentos de câmera pelo usuário para poder a visita ser guiada completamente pelo código. Selecionei um modelo de um soldado em arquivo .glb e a partir dele usei as animações de ficar parado na pose e andar, para simular o movimento do guia. No meu cenário, considerei cada cortina uma obra de arte, então o guia anda em direção a cada cortina de um lado e faz uma breve parada com o objetivo de apresentar ao visitante aquela obra de arte. Defini a movimentação e as paradas baseadas no tempo do sistema para ter o controle do quanto o guia se mantém em cada ação e em cada parada para apresentar uma obra, a câmera do visitante se movimenta levemente em direção ao quadro, de forma que tenha visão do quadro e do guia.

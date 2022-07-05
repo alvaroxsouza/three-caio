@@ -84,7 +84,7 @@ function onProgress(xhr) {
 
 function buildScene() {
     const loader = new GLTFLoader();
-    loader.load('../Assets/Models/glTF/soldier/Soldier.glb', function(gltf) {
+    loader.load('../Assets/Models/glTF/Soldier/Soldier.glb', function(gltf) {
         model = gltf.scene;
         model.scale.set(50, 50, 50);
 
